@@ -1,0 +1,36 @@
+To work in git on your own seperate branch 
+
+Create your own branch:
+
+$ git branch mybranch
+
+Now switch to your branch
+
+$ git checkout mybranch
+
+Check the status 
+
+$ git status 
+
+The above command will show that you are in your "mybranch"
+
+Now you can create a new file or what ever you want to add code locally. After that you need to push the updates from yopur local repository to remote
+
+$ git push --set-upstream origin mybranch
+
+So you can visit your github link and see there are two branches now you need to merge your "mybranch" with your master branch.
+
+First need to switch your master.
+ **Locally you are switching**
+ 
+$ git checkout master
+$ git merge mybranch
+
+**now you need to push the local merge into remote repository**
+
+$ git push
+
+
+
+
+
